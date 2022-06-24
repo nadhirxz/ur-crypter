@@ -1,0 +1,14 @@
+/* ---- To disable text selection in the whole website ----
+::selection { background: transparent; }
+::-moz-selection { background: transparent; } */
+
+/* ---- To disable selection for just one thing ---- */
+.noselect {
+cursor: default;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}

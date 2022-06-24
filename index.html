@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>urcrypter</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/noselect.css">
+  </head>
+  <body class="noselect">
+    <div id="header1" class="header">
+      <center><h1 class="htxt">urcrypter</h1></center>
+    </div>
+    <div id="content" class="container content">
+      <div class="first">
+        <h5>Text :</h5>
+        <textarea class="form-control area" id="text" rows="11" placeholder="Your text here .."></textarea>
+        <input type="text" class="form-control inpt" placeholder="Password (optional)" id="password">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkpswrd" onclick="pswrd()" checked>
+          <label class="custom-control-label lbl" for="checkpswrd">Show password</label>
+        </div>
+      </div>
+      <div class="second">
+        <h5>Result :</h5>
+        <textarea class="form-control area" id="result" rows="11" placeholder="Result will show up here .."></textarea>
+        <select class="custom-select inpt" id="method">
+          <option value="0" selected="">Choose a method</option>
+          <option value="1">Caesar Cipher</option>
+          <option value="2">XOR Cipher</option>
+          <option value="3">NUMBER/XOR Cipher (Numbers Only)</option>
+        </select>
+        <div class="invalid-feedback ivld" id="invld">Please choose a method</div>
+      </div>
+      <div class="clear">
+        
+        <br>
+        <div class="buttons">
+          <button type="button" class="btn btn-success bttn1" onclick="encrypt();">Encrypt</button>
+          <button type="button" class="btn btn-info bttn2" onclick="decrypt();">Decrypt</button>
+        </div>
+      </div>     
+    </div>
+    <div id="mob" class="container">
+      <h5>Text :</h5>
+        <textarea class="form-control area" id="text" rows="11" placeholder="Your text here .."></textarea>
+        <input type="text" class="form-control inpt" placeholder="Password (optional)" id="password">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="checkpswrd" onclick="pswrd()" checked>
+          <label class="custom-control-label lbl" for="checkpswrd">Show password</label>
+        </div>
+        <br>
+        <center>
+          <select class="custom-select inpt1" id="method">
+            <option value="0" selected="">Choose a method</option>
+            <option value="1">Caesar Cipher</option>
+            <option value="2">XOR Cipher</option>
+            <option value="3">NUMBER/XOR Cipher (Numbers Only)</option>
+          </select>
+          <br><br>
+          <button type="button" class="btn btn-success btttn1" onclick="encrypt();">Encrypt</button>
+          <button type="button" class="btn btn-info btttn2" onclick="decrypt();">Decrypt</button>
+        </center>
+        <br><br>
+        <h5>Result :</h5>
+        <textarea class="form-control area" id="result" rows="11" placeholder="Result will show up here .."></textarea>
+        <div class="invalid-feedback ivld" id="invld">Please choose a method</div>
+        <br><br>
+      </div>
+    <footer id="footer" class="page-footer font-small blue">
+      <div class="footer">
+        <a href="https://nadhirxz.github.io" target="_blank">Nadhir</a>
+        &#169 2019
+      </div>
+    </footer>
+  </body>
+  <script src="js/common.js"></script>
+  <script src="js/main.js"></script>
+</html>
